@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="description" content="Mencari KodePos dengan mudah dan cepat">
+        <title>Cari Kodepos</title>
+    
+        <link rel="stylesheet" type="text/css" href="sylesheet.css">
+        <script src="https://code.jquery.com/jquery-3.0.0.min.js"
+            integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,300italic,400italic,700,700italic,100italic'
+            rel='stylesheet' type='text/css'>
+        <link
+            href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic|Open+Sans+Condensed:300'
+            rel='stylesheet' type='text/css'>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Cari Informasi Kodepos Indonesia</h1>
+        </header>
+        <div id="searcharea">
+            <div class="center-form">
+                <form>
+                    <label for="search"><i class="fa fa-search" aria-hidden="true"></i></label>
+                    <input id="search" name="search" type="search" list="searchHelper"
+                        placeholder="Ketik Provinsi, Kota, Daerah, ataupun Kodepos" />
+                    <datalist id="searchHelper"></datalist>
+                </form>
+                <button class="button" id="searchButton">Cari</button>
+                <button class="button clear" id="clearButton">Hapus</button>
+            </div>
+        </div>
+        <div id="searchUpdate">
+            <?php include('loader01.html'); ?>
+        </div>
+    </body>
+</html>
